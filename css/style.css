@@ -1,0 +1,192 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #588c85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 117px;
+}
+/* стили навигационной панели, вверху окна */
+.nav-bar-main {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+#logo {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+#logo-anchor {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#nav-right-block {
+  flex: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#nav-contacts {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#facebook-logo,
+#phone-logo {
+  transform: scale(0.3, 0.3);
+}
+
+#nav-contacts,
+#nav-submenu-bar {
+  font-size: 11px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-submenu-bar-items {
+  margin: 5px;
+  font-size: 12px;
+}
+/* верхний блок с картинкой */
+
+#hero-block {
+  height: 485px;
+  background-image: url("../img/shinjuku-4768674_1920.jpg");
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-block-text-title {
+  font-family: serif;
+  color: #00ffff;
+  font-size: 30px;
+}
+.hero-block-text {
+  color: #ffffff;
+  width: 446px;
+  text-align: center;
+}
+.hero-block-button {
+  height: 60px;
+  width: 132px;
+  color: #ffffff;
+  background-color: #50aea0;
+  border: #ffffff 1px solid;
+  font-size: 20px;
+}
+
+/* стили блока "who-we-are" */
+
+#who-we-are {
+  height: 484px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.watch-vdo {
+  height: 358px;
+  width: 512px;
+  border: 1px solid #50aea0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watch-vdo-play-button {
+  height: 101px;
+  width: 101px;
+  background-image: url("../img/play-button.PNG");
+  background-size: 100% 100%;
+  border-style: none;
+}
+.who-we-are-text-box {
+  height: 216px;
+  width: 532px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.who-we-are-text-title {
+  color: #50aea0;
+  font: 38px serif;
+}
+.who-we-are-text-strings {
+  color: #818991;
+}
+
+/* стили блока "our-service" */
+
+#our-service {
+  width: 1227px;
+  height: 528px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-service-box {
+  width: 346px;
+  height: 80px;
+  border: 1px solid #16c8b9;
+  color: #16c8b9;
+  font: 26px serif ;
+  text-align: center;
+}
+
+.our-service-itembox{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.our-service-box-item{
+  vertical-align: bottom;
+  max-width: 195px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-service-box-item-pict{
+  max-height: 139px;
+  max-width: 139px;
+}
+.our-service-box-item-button{
+  width: 132px;
+  height: 60px;
+  background-color: #ffffff;
+  font-size: 13px;
+  color: #16c8b9;
+  border: #16c8b9 1px solid;
+}
+.our-service-box-item-button:hover{
+  width: 132px;
+  height: 60px;
+  background-color: #16c8b9;
+  font-size: 13px;
+  color: #ffffff;
+  border: #16c8b9 1px solid;
+}
+.our-service-box-item-title{
+  font-size: 21px;
+  color: #818991;
+}
+.our-service-box-item-text{
+  font-size: 15px;
+  color: #818991;
+  text-align: center;
+}
