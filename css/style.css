@@ -55,6 +55,8 @@ header {
   margin: 5px;
   font-size: 12px;
 }
+
+
 /* верхний блок с картинкой */
 
 #hero-block {
@@ -89,6 +91,7 @@ header {
 
 #who-we-are {
   height: 484px;
+  width: 1802px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -129,29 +132,31 @@ header {
 #our-service {
   width: 1227px;
   height: 528px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin: auto;
+  padding: 0px;
 }
 
 .our-service-box {
+  margin: 0px;
   width: 346px;
   height: 80px;
   border: 1px solid #16c8b9;
   color: #16c8b9;
-  font: 26px serif ;
+  font: 26px serif;
   text-align: center;
 }
 
-.our-service-itembox{
+.our-service-itembox {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.our-service-box-item{
+.our-service-box-item {
   vertical-align: bottom;
   max-width: 195px;
   margin: 20px;
@@ -161,11 +166,11 @@ header {
   align-items: center;
 }
 
-.our-service-box-item-pict{
+.our-service-box-item-pict {
   max-height: 139px;
   max-width: 139px;
 }
-.our-service-box-item-button{
+.our-service-box-item-button {
   width: 132px;
   height: 60px;
   background-color: #ffffff;
@@ -173,7 +178,7 @@ header {
   color: #16c8b9;
   border: #16c8b9 1px solid;
 }
-.our-service-box-item-button:hover{
+.our-service-box-item-button:hover {
   width: 132px;
   height: 60px;
   background-color: #16c8b9;
@@ -181,12 +186,160 @@ header {
   color: #ffffff;
   border: #16c8b9 1px solid;
 }
-.our-service-box-item-title{
+.our-service-box-item-title {
   font-size: 21px;
   color: #818991;
 }
-.our-service-box-item-text{
+.our-service-box-item-text {
   font-size: 15px;
   color: #818991;
   text-align: center;
+}
+
+#portfolios {
+  width: 1295px;
+  height: 745px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  padding: 0px;
+}
+.portfolios-title {
+  margin: 0px;
+  margin-bottom: 20px;
+  width: 346px;
+  height: 80px;
+  border: 1px solid #16c8b9;
+  color: #16c8b9;
+  font: 26px serif;
+  text-align: center;
+}
+.portfolios-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolios-box-item {
+  font-size: 20px;
+  width: 310px;
+  color: #818991;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portfolios-box-item-img:hover {
+  border: 1px solid #16c8b9;
+}
+.portfolios-box-text-anchor {
+  color: #818991;
+}
+.portfolios-box-text-anchor:hover {
+  color: #16c8b9;
+}
+
+#slider {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+.slider-button {
+  border: 1px solid #16c8b9;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.slider-button:hover {
+  background-color: #50aea0;
+}
+
+#ourteam {
+  width: 1234px;
+  height: 574px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ourteam-title {
+  width: 348px;
+  height: 81px;
+  border: 1px solid #16c8b9;
+  color: #16c8b9;
+  font: 26px serif;
+  text-align: center;
+}
+.ourteam-box {
+  width: 1234px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ourteam-box-item {
+  border: 1px solid #16c8b9;
+  width: 288px;
+  height: 453px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ourteam-box-item-pict{
+  border: none;
+  border-radius: 50%;
+  margin: 28px;
+}
+.ourteam-box-item-name{
+  color: #50aea0;
+  font-size: 18px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 5px;
+}
+.ourteam-box-item-position, .ourteam-box-item-mail{
+  margin: 5px;
+  font-size: 18px;
+  color: #818991;
+  font-family: arial;
+}
+.ourteam-box-item-socials{
+  margin: 25px;
+}
+
+#send-message{
+  width: 1802px;
+  height: 467px;
+  border: 1px solid #818991;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.send-message-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.send-message-left-input{
+  margin: 10px;
+  width: 452px;
+  height: 66px;
+}
+.send-message-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.send-message-right-text{
+  width: 452px;
+  height: 253px;
+  margin-bottom: 5px;
+}
+.send-message-right-button{
+  width: 212px;
+  height: 70px;
 }
