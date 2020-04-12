@@ -260,6 +260,7 @@ header {
   width: 1234px;
   height: 574px;
   margin: auto;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -308,38 +309,78 @@ header {
 }
 .ourteam-box-item-socials{
   margin: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ourteam-box-item-socials-anchor{
+  margin: 5px;
 }
 
+
 #send-message{
-  width: 1802px;
   height: 467px;
   border: 1px solid #818991;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  background-color: #50aea0;
 }
 .send-message-left{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-end;
+  margin: 40px;
 }
 .send-message-left-input{
-  margin: 10px;
+  margin-bottom: 25px;
   width: 452px;
   height: 66px;
+  background-color: #ffffff;
+  font: 20px sans-serif;
+  padding-left: 30px;
 }
 .send-message-right{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
+  margin: 40px;
 }
 .send-message-right-text{
   width: 452px;
   height: 253px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  resize: none;
+  font: 20px sans-serif;
+  padding: 30px;
 }
 .send-message-right-button{
   width: 212px;
   height: 70px;
+  background-color: #50aea0;
+  border: 1px solid #ffffff;
+  font: 22px serif;
+  color: #ffffff;
+}
+
+footer{
+  background-color: #818991;
+  height: 192px;
+}
+.footer{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.footer-copyright{
+  font: 10px sans-serif;
+  color: #ffffff;
 }
