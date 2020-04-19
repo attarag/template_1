@@ -55,11 +55,20 @@ header {
   margin: 5px;
   font-size: 12px;
 }
-
+.nav-submenu-bar-items a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav-submenu-bar-items a:hover {
+  text-decoration: none;
+  color: #1f1f1f;
+}
 
 /* верхний блок с картинкой */
 
 #hero-block {
+  width: 1802px;
+  margin: auto;
   height: 485px;
   background-image: url("../img/shinjuku-4768674_1920.jpg");
   background-position: bottom;
@@ -92,6 +101,7 @@ header {
 #who-we-are {
   height: 484px;
   width: 1802px;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -203,7 +213,8 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: auto;
+  margin: auto;  
+  margin-bottom: 100px;
   padding: 0px;
 }
 .portfolios-title {
@@ -217,6 +228,9 @@ header {
   text-align: center;
 }
 .portfolios-box {
+  display: none;
+}
+.portfolios-box.active {
   display: flex;
   flex-wrap: wrap;
 }
@@ -229,6 +243,9 @@ header {
   align-items: center;
   flex-direction: column;
 }
+.portfolios-box-item-img {
+  border: 1px solid #00ffff00;
+}
 .portfolios-box-item-img:hover {
   border: 1px solid #16c8b9;
 }
@@ -238,12 +255,14 @@ header {
 .portfolios-box-text-anchor:hover {
   color: #16c8b9;
 }
-
-#slider {  
+.portfolios-box-img{
+  width: 1140px;
+  height: 648px
+}
+#slider {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
   margin-top: 15px;
 }
 .slider-button {
@@ -254,6 +273,9 @@ header {
 }
 .slider-button:hover {
   background-color: #50aea0;
+}
+.active{
+  border-color: #1f1f1f;
 }
 
 #ourteam {
@@ -289,36 +311,36 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.ourteam-box-item-pict{
+.ourteam-box-item-pict {
   border: none;
   border-radius: 50%;
   margin: 28px;
 }
-.ourteam-box-item-name{
+.ourteam-box-item-name {
   color: #50aea0;
   font-size: 18px;
   font-family: serif;
   font-weight: bold;
   margin: 5px;
 }
-.ourteam-box-item-position, .ourteam-box-item-mail{
+.ourteam-box-item-position,
+.ourteam-box-item-mail {
   margin: 5px;
   font-size: 18px;
   color: #818991;
   font-family: arial;
 }
-.ourteam-box-item-socials{
+.ourteam-box-item-socials {
   margin: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.ourteam-box-item-socials-anchor{
+.ourteam-box-item-socials-anchor {
   margin: 5px;
 }
 
-
-#send-message{
+#send-message {
   height: 467px;
   border: 1px solid #818991;
   display: flex;
@@ -327,14 +349,14 @@ header {
   margin: auto;
   background-color: #50aea0;
 }
-.send-message-left{
+.send-message-left {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
   margin: 40px;
 }
-.send-message-left-input{
+.send-message-left-input {
   margin-bottom: 25px;
   width: 452px;
   height: 66px;
@@ -342,14 +364,14 @@ header {
   font: 20px sans-serif;
   padding-left: 30px;
 }
-.send-message-right{
+.send-message-right {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
   margin: 40px;
 }
-.send-message-right-text{
+.send-message-right-text {
   width: 452px;
   height: 253px;
   margin-bottom: 20px;
@@ -358,7 +380,7 @@ header {
   font: 20px sans-serif;
   padding: 30px;
 }
-.send-message-right-button{
+.send-message-right-button {
   width: 212px;
   height: 70px;
   background-color: #50aea0;
@@ -367,11 +389,21 @@ header {
   color: #ffffff;
 }
 
-footer{
+.upbutton {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 50px;
+  visibility: hidden;
+}
+
+footer {
   background-color: #818991;
   height: 192px;
 }
-.footer{
+.footer {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -380,7 +412,7 @@ footer{
   padding-left: 20%;
   padding-right: 20%;
 }
-.footer-copyright{
+.footer-copyright {
   font: 10px sans-serif;
   color: #ffffff;
 }

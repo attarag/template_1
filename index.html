@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="external/jquery/jquery.js"></script>
     <title>Template 1</title>
 </head>
 <body>
@@ -19,10 +20,10 @@
                     <img id='facebook-logo' src="img/icons8-facebook-48.png" alt="">
                 </div>
                 <div id='nav-submenu-bar'>
-                    <div class="nav-submenu-bar-items">SERVICES</div>
-                    <div class="nav-submenu-bar-items">PORTFOLIO</div>
-                    <div class="nav-submenu-bar-items">TEAM</div>
-                    <div class="nav-submenu-bar-items">CONTACT US</div>
+                    <div class="nav-submenu-bar-items"><a href="#our-service">SERVICES</a></div>
+                    <div class="nav-submenu-bar-items"><a href="#portfolios">PORTFOLIO</a></div>
+                    <div class="nav-submenu-bar-items"><a href="#ourteam">TEAM</a></div>
+                    <div class="nav-submenu-bar-items"><a href="#send-message">CONTACT US</a></div>
                 </div>
             </div>
         </div>
@@ -53,6 +54,7 @@
 
         <!-- блок "our-service" -->
         <div id="our-service">
+            <a href=""></a>
             <div class="our-service-box">
                 <p>OUR SERVICE</p>
             </div>
@@ -89,7 +91,7 @@
             <div class="portfolios-title">
                 <p>PORTFOLIOS</p>
             </div>
-            <div class="portfolios-box">
+            <div class="portfolios-box tab-1 active">
                 <div class="portfolios-box-item">
                     <img class="portfolios-box-item-img" src="img/banner_web_ui.png" alt="WEB UI">
                     <a class="portfolios-box-text-anchor" href="">WEB UI</a>
@@ -123,14 +125,18 @@
                     <a class="portfolios-box-text-anchor" href="">COVER DESIGN</a>
                 </div>
             </div>
+            <div class="portfolios-box tab-2">
+                <img src="img/aeolian-islands-4559369_1280.jpg" alt="isles" class="portfolios-box-img">
+            </div>
+            <div class="portfolios-box tab-3">
+                <img src="img/mt-fuji-477832_1280.jpg" alt="fuji" class="portfolios-box-img">
+            </div>
+            <div id='slider'>
+                <button class="slider-button tab-1"></button>
+                <button class="slider-button tab-2"></button>
+                <button class="slider-button tab-3"></button>
+            </div>
                         
-        </div>
-
-        <!-- блок "slider" -->
-        <div id='slider'>
-            <button class="slider-button"></button>
-            <button class="slider-button"></button>
-            <button class="slider-button"></button>
         </div>
 
         <!-- блок "our team" -->
@@ -178,18 +184,24 @@
         <!-- блок send message -->
         <div id="send-message">
             <div class="send-message-left">
-                <input type="text" name="name" class="send-message-left-input" placeholder="NAME">
-                <input type="text" name="email" class="send-message-left-input" placeholder="EMAIL">
-                <input type="text" name="phone" class="send-message-left-input" placeholder="PHONE">
+                <input type="text" name="name" class="send-message-left-input" id="sendname" placeholder="NAME">
+                <input type="text" name="email" class="send-message-left-input" id="sendemail" placeholder="EMAIL">
+                <input type="text" name="phone" class="send-message-left-input" id="sendphone" placeholder="PHONE">
             </div>
             <div class="send-message-right">
-                <textarea name="message" class="send-message-right-text" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+                <textarea name="message" class="send-message-right-text" id="sendmessagetext" cols="30" rows="10" placeholder="MESSAGE"></textarea>
                 <button class="send-message-right-button">SEND</button>
             </div>
         </div>
 
 
     </div>
+
+    <button class="upbutton">
+        <a href="/">
+            <img src="img/arrow up-1.1s-44px.png" alt="to the top">
+        </a>
+    </button>
 
     <footer>
         <div class="footer">
